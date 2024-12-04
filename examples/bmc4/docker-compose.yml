@@ -4,7 +4,7 @@ services:
     environment:
       EULA: true
       MODPACK_PLATFORM: MODRINTH
-      MODRINTH_MODPACK: https://modrinth.com/modpack/better-mc-forge-bmc4/version/v32.5
+      MODRINTH_MODPACK: https://modrinth.com/modpack/better-mc-forge-bmc4/version/v34.5
       MODRINTH_EXCLUDE_FILES: |
         XaeroPlus
         XaerosWorldMap
@@ -12,7 +12,7 @@ services:
         mods/citresewn-*.jar
         **/datapacks/BE_default_endgen_fix*
       MODRINTH_FORCE_SYNCHRONIZE: true
-      MEMORY: 4G
+      MEMORY: 6G
     ports:
       - "25565:25565"
     # declare /data volume mapping as desired
