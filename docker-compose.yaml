@@ -11,7 +11,7 @@ services:
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4
       # Optional: select a specific version/file
       #CF_FILENAME_MATCHER: "0.2.34"
-      MEMORY: 7G
+      MEMORY: 6G
     volumes:
       - mc-data:/data
 
