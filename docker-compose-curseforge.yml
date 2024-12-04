@@ -1,0 +1,19 @@
+services:
+  mc:
+    image: itzg/minecraft-server:${IMAGE_TAG:-java8}
+    volumes:
+    - ./modpacks:/modpacks:ro
+    - data:/data
+    environment:
+      EULA: "true"
+      TYPE: CURSEFORGE
+      #CF_SERVER_MOD: BMC4_Server_Pack_v35.zip
+#      CF_SERVER_MOD: /modpacks/createlive3serverfiles+1.4.2.zip
+#      CF_SERVER_MOD: /modpacks/Valhelsia+3-3.5.1-SERVER.zip
+      CF_SERVER_MOD: https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4/download/5953523
+#      CF_SERVER_MOD: /modpacks/${MODPACK:-SkyFactory_4_Server_4.1.0.zip}
+    ports:
+      - "25565:25565"
+
+volumes:
+  data: {}
